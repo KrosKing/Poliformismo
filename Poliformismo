@@ -1,0 +1,37 @@
+#Ejercicios poliformismo
+class Colombia():
+    def Capital(self):
+        print("Bogota")
+    def idioma(self):
+        print("Español")
+
+class Francia():
+    def Capital(self):
+        print("Paris")
+    def idioma(self):
+        print("Frances")
+
+def Estudiar(Cuaderno):
+    Cuaderno.Capital()
+    Cuaderno.idioma()
+Estudiar(Colombia())
+Estudiar(Francia())
+
+class Cuchimba():
+    def tomar(self):
+        print("El nivel de tomadera de cuchimba es de: 100%, lo cual su velocidad aumanta 30%")
+class Reyes():
+    def tomar(self):
+        print("Reyes usa trago para potenciar su daño")
+class Silva():
+    def tomar(self):
+        print("Este personaje no toma, lo que incrementa su poder magico")
+class Thadashy():
+    def tomar(self):
+        print("Su fuerza aumanta un 80% pero su velocidad disminuye un 40%")
+class Montaña():
+    def tomar(self):
+        print("Su habilidad con los pies aumenta un 100% pero tendra un cooldown de 2 horas")
+def poder(habilidad):
+    habilidad.tomar()
+poder(Cuchimba())
